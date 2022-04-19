@@ -1,0 +1,41 @@
+*{margin:0; padding:0;}
+
+
+@mixin flex {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin position1 ($a) {
+  position: relative;
+  top:($a) ;
+}
+
+#container{
+  width:428px;
+  height:926px;
+  background-color: #ccc;
+  // @include flex;
+
+  &>div{
+    border:1px solid black;
+    width: 90%;
+    margin-left: 5%;
+    height:300px;
+  }
+  
+  &>div:nth-child(1){
+    height:400px;
+  }
+  
+  &>div:nth-child(2){
+    @include position1(-90px)
+  }
+
+  &>div:nth-child(3){
+    @include position1(-80px)
+  }
+  
+}

@@ -6,10 +6,9 @@
 #container {
   width: 428px;
   height: 926px;
-  background-color: #ccc;
+  background-color: rgb(105, 105, 105);
 }
 #container > div {
-  border: 1px solid black;
   width: 90%;
   margin-left: 5%;
   height: 300px;
@@ -49,7 +48,6 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 1px solid black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -63,8 +61,24 @@
 #container > div:nth-child(2) {
   position: relative;
   top: -90px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 20px;
+  background-color: rgba(240, 248, 255, 0.225);
+  font-size: 60px;
+  text-align: left;
+  font-weight: 600;
+  color: white;
 }
 #container > div:nth-child(3) {
   position: relative;
-  top: -80px;
+  top: -70px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 20px;
+  background-color: rgba(240, 248, 255, 0.225);
+  font-size: 60px;
+  text-align: left;
+  font-weight: 600;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

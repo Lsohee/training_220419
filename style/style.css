@@ -17,6 +17,49 @@
 #container > div:nth-child(1) {
   height: 400px;
 }
+#container > div:nth-child(1) > div:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: red;
+  position: relative;
+  left: 20px;
+  top: 50px;
+}
+#container > div:nth-child(1) > div:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -90px;
+  left: 60px;
+  border: 2px solid gold;
+  border-radius: 50%;
+}
+#container > div:nth-child(1) > div:nth-child(3) {
+  width: 50px;
+  position: relative;
+  top: -230px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#container > div:nth-child(1) > div:nth-child(3) > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
 #container > div:nth-child(2) {
   position: relative;
   top: -90px;
